@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in MATLAB related to how conditional statements (if, elseif, else) handle NaN (Not a Number) values.  Specifically, when comparing NaN to other numerical values using relational operators (>, <, ==, etc.), the comparison always evaluates to false. This behavior can lead to unexpected results when working with data that might contain NaN values.
+
+The `bug.m` file contains a function illustrating the problem. The `bugSolution.m` file provides a solution that addresses this issue using `isnan()` to explicitly check for NaN values before performing numerical comparisons.
